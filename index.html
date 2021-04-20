@@ -143,17 +143,18 @@
           24 hours</p>
       </div>
       <div class="form">
-        <form>
+        <form id="form">
           <label>
-            <input placeholder="First Name" class="name" type="text" name="name" id="name" reguired>
-            <input placeholder="Last Name" class="surname" type="text" name="surname" id="surname" reguired>
+            <input placeholder="First Name" class="name" type="text" name="name" id="name" required />
+            <input placeholder="Last Name" class="surname" type="text" name="surname" id="surname" required />
           </label>
           <input placeholder="Phone Number" class="phone" type="tel" name="phone" id="phone"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required />
           <select class="select" name="service" id="service">
             <option value="">Select Service</option>
           </select>
-          <input class="btnSubmit" type="submit" value="Submit Now">
+          <!-- <div class="validationErrorMessage"></div> -->
+          <input class="btnSubmit" type="submit" value="Submit Now" />
         </form>
       </div>
     </section>
