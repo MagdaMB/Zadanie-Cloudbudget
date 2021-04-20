@@ -1,0 +1,142 @@
+@import "./variables.scss";
+
+.header {
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding-top: 17px;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+
+  .visible {
+    display: block !important;
+  }
+
+  &__logo {
+    display: flex;
+    padding: 58px 0 0 166px;
+
+    img {
+      box-sizing: content-box;
+      display: inline-block;
+      height: 17px;
+      padding: 3px 10px 0 0;
+      width: 25px;
+    }
+
+    p {
+      color: $colorWhite;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 22px;
+      text-transform: uppercase;
+    }
+  }
+
+  &__menu {
+    nav {
+      padding: 58px 160px 0 0;
+
+      .menu__list {
+        align-items: center;
+        display: flex;
+        height: 22px;
+        justify-content: space-around;
+        width: 445px;
+
+        .menu__items {
+          list-style: none;
+
+          a {
+            color: $colorWhite;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 17px;
+            letter-spacing: 0em;
+            text-align: left;
+            text-decoration: none;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+
+  &__menu--hamburger {
+    display: none;
+  }
+
+  @media all and (max-width: 1023px) {
+    display: block;
+
+    &__logo {
+      padding-left: 2%;
+    }
+
+    &__menu {
+      background: $colorWhite;
+      height: 300px;
+      margin-top: 10px;
+      width: 100%;
+
+      nav {
+        padding: 0;
+        position: relative;
+        top: 45%;
+
+        .menu__list {
+          flex-direction: column;
+          width: 100%;
+
+          .menu__items {
+            padding: 10px 0;
+
+            a {
+              color: $colorBlack;
+            }
+          }
+        }
+      }
+    }
+
+    &__menu.desktop {
+      display: none;
+    }
+
+    &__menu--hamburger {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 17px;
+
+      .hamburger__box {
+        border-top: 5px solid #fff;
+        cursor: pointer;
+        height: 40px;
+        margin: 47px 15px 0 0;
+        position: relative;
+        width: 40px;
+
+        &:before,
+        &:after {
+          background: $colorWhite;
+          border-top: 5px solid #fff;
+          content: "";
+          display: block;
+          left: 0;
+          position: absolute;
+          top: 0;
+          transform: translateY(10px);
+          width: 40px;
+        }
+
+        &:after {
+          transform: translateY(25px);
+        }
+      }
+    }
+  }
+}
