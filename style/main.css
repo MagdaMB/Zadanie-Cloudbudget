@@ -555,7 +555,16 @@
   text-indent: 13px;
 }
 
-.main .section__contact .form form label {
+.main .section__contact .form form .validationErrorMessage {
+  color: red;
+  font-size: 12px;
+}
+
+.main .section__contact .form form .validationErrorMessage li {
+  list-style-type: none;
+}
+
+.main .section__contact .form form div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -564,8 +573,8 @@
           justify-content: space-between;
 }
 
-.main .section__contact .form form label input.name,
-.main .section__contact .form form label input.surname {
+.main .section__contact .form form div input.name,
+.main .section__contact .form form div input.surname {
   width: 255px;
 }
 
@@ -606,13 +615,13 @@
     max-width: 445px;
     width: 100%;
   }
-  .main .section__contact .form form label {
+  .main .section__contact .form form div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .main .section__contact .form form label input {
+  .main .section__contact .form form div input {
     width: 100% !important;
   }
   .main .section__contact .form form input,

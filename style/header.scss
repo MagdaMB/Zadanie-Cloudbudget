@@ -15,6 +15,10 @@
     display: block !important;
   }
 
+  .active {
+    font-weight: 700 !important;
+  }
+
   &__logo {
     display: flex;
     padding: 58px 0 0 166px;
@@ -53,7 +57,7 @@
           a {
             color: $colorWhite;
             font-size: 14px;
-            font-weight: 600;
+            font-weight: 400;
             line-height: 17px;
             letter-spacing: 0em;
             text-align: left;

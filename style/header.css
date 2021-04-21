@@ -18,6 +18,10 @@
   display: block !important;
 }
 
+.header .active {
+  font-weight: 700 !important;
+}
+
 .header__logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,7 +70,7 @@
 .header__menu nav .menu__list .menu__items a {
   color: #FFFFFF;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   line-height: 17px;
   letter-spacing: 0em;
   text-align: left;

@@ -23,7 +23,7 @@
     <div class="header__menu desktop">
       <nav>
         <ul class="menu__list">
-          <li class="menu__items"><a href="#overview">Overview</a></li>
+          <li class="menu__items"><a class="active" href="#overview">Overview</a></li>
           <li class="menu__items"><a href="#features">Features</a></li>
           <li class="menu__items"><a href="#technology">Technology</a></li>
           <li class="menu__items"><a href="#contact">Contact</a></li>
@@ -144,16 +144,21 @@
       </div>
       <div class="form">
         <form id="form">
-          <label>
-            <input placeholder="First Name" class="name" type="text" name="name" id="name" required />
-            <input placeholder="Last Name" class="surname" type="text" name="surname" id="surname" required />
-          </label>
-          <input placeholder="Phone Number" class="phone" type="tel" name="phone" id="phone"
-            pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required />
+          <div>
+            <input placeholder="First Name" class="name" type="text" name="name" id="name" />
+            <!-- <input placeholder="First Name" class="name" type="text" name="name" id="name" required/> -->
+
+            <input placeholder="Last Name" class="surname" type="text" name="surname" id="surname" />
+            <!-- <input placeholder="Last Name" class="surname" type="text" name="surname" id="surname"  required/> -->
+
+          </div>
+          <!-- <input placeholder="Phone Number" class="phone" type="tel" name="phone" id="phone"
+            pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required /> -->
+          <input placeholder="Phone Number" class="phone" type="tel" name="phone" id="phone" />
           <select class="select" name="service" id="service">
             <option value="">Select Service</option>
           </select>
-          <!-- <div class="validationErrorMessage"></div> -->
+          <div class="validationErrorMessage"></div>
           <input class="btnSubmit" type="submit" value="Submit Now" />
         </form>
       </div>
